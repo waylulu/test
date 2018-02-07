@@ -1,0 +1,11 @@
+framework module zyk {
+  umbrella header "zyk.h"
+
+  export *
+  module * { export * }
+}
+
+module zyk.Swift {
+    header "zyk-Swift.h"
+    requires objc
+}

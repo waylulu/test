@@ -7,11 +7,18 @@
 //
 
 import UIKit
-
+import zyk
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let zyk:zyk_web!
+        zyk = zyk_web.init(url: "https://www.baidu.com")
+        zyk.showSearchState = {
+            print("1")
+        }
+        self.present(zyk, animated: true, completion: nil)
+
         // Do any additional setup after loading the view, typically from a nib.
     }
 

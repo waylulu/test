@@ -12,7 +12,23 @@
 		7ED86A701FAD51A20095EC65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ED86A6E1FAD51A20095EC65 /* Main.storyboard */; };
 		7ED86A721FAD51A20095EC65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ED86A711FAD51A20095EC65 /* Assets.xcassets */; };
 		7ED86A751FAD51A20095EC65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ED86A731FAD51A20095EC65 /* LaunchScreen.storyboard */; };
+		7ED86A811FAD54650095EC65 /* zyk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED86A801FAD52A80095EC65 /* zyk.framework */; };
+		7ED86A821FAD54650095EC65 /* zyk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED86A801FAD52A80095EC65 /* zyk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7ED86A7F1FAD51BA0095EC65 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7ED86A821FAD54650095EC65 /* zyk.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7ED86A671FAD51A20095EC65 /* TestWebViewJS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestWebViewJS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +38,7 @@
 		7ED86A711FAD51A20095EC65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7ED86A741FAD51A20095EC65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7ED86A761FAD51A20095EC65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ED86A801FAD52A80095EC65 /* zyk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = zyk.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ED86A811FAD54650095EC65 /* zyk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +75,7 @@
 				7ED86A6A1FAD51A20095EC65 /* AppDelegate.swift */,
 				7ED86A6C1FAD51A20095EC65 /* ViewController.swift */,
 				7ED86A6E1FAD51A20095EC65 /* Main.storyboard */,
+				7ED86A801FAD52A80095EC65 /* zyk.framework */,
 				7ED86A711FAD51A20095EC65 /* Assets.xcassets */,
 				7ED86A731FAD51A20095EC65 /* LaunchScreen.storyboard */,
 				7ED86A761FAD51A20095EC65 /* Info.plist */,
@@ -74,6 +93,7 @@
 				7ED86A631FAD51A20095EC65 /* Sources */,
 				7ED86A641FAD51A20095EC65 /* Frameworks */,
 				7ED86A651FAD51A20095EC65 /* Resources */,
+				7ED86A7F1FAD51BA0095EC65 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -276,6 +296,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8NC9AT93C5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestWebViewJS",
+				);
 				INFOPLIST_FILE = TestWebViewJS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huangteng.TestWebViewJS;
@@ -291,6 +315,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8NC9AT93C5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestWebViewJS",
+				);
 				INFOPLIST_FILE = TestWebViewJS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huangteng.TestWebViewJS;
